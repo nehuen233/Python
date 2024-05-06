@@ -30,4 +30,53 @@ print(valor[1]+valor[5])
 print(valor[1]-valor[5])
 print(valor[1]*valor[5])
 print(valor[1]/valor[5])
+
+#Ejercicio 1
+#Leer 2 números enteros, calcular la suma e informar el resultado.
+
+N1 = int(input("Ingrese un numero"))
+N2 = int(input("Ingrese un numero"))
+resultado = int(input(N1 + N2))    
+
+if N1 + N2:
+     print("el resultado es  "+ resultado)
+     
+#Ejercicio 2    
+#Leer 4 números enteros, calcular la suma e informar el resultado.
+n1 = int(input("Ingrese un valor"))
+n2 = int(input("Ingrese un valor"))
+n3 = int(input("Ingrese un valor"))
+n4 = int(input("Ingrese un valor"))
+result = int(input(n1 + n2 + n3 + n4))
+
+if n1 + n2 + n3 + n4:
+    print("El resultado es   "+ result)
     
+#Ejercicio 3
+#Dados 2 números enteros, que representan los lados de un rectángulo se pide informar la superficie del mismo.
+
+def multiplicacion ():
+    Valor1 = int(input("Ingrese el valor de la superficie"))
+    valor2 = int(input("Ingrese el valor de la superficie"))
+    Solucion = (Valor1 * valor2)
+    
+    print("La altura es   ", Solucion)
+    
+multiplicacion()
+
+#Ejercicio 4
+#Dado 1 número con decimales, que representa el lado de un cuadrado se pide informar la superficie del mismo.
+
+def multiplicacion():
+    triangulo = float(input("Ingrese un valor decimal"))
+    dato = triangulo * 4
+    
+    print("El area del triangulo es:  ", dato)
+    
+multiplicacion()
+
+#Ejercicio 5
+#Se ingresa 3 números que representan horas, minutos y segundos. Se pide informar el resultado expresado en 
+#segundos. Determinar qué tipo de valor es el aconsejable para los datos solicitados
+
+
