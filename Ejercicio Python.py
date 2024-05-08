@@ -33,23 +33,24 @@ def ejercicio2():
 
 #Ejercicio 1
 #Leer 2 números enteros, calcular la suma e informar el resultado.
-N1 = int(input("Ingrese un numero"))
-N2 = int(input("Ingrese un numero"))
-resultado = int(input(N1 + N2))    
+def ejercicio1p():
+    N1 = int(input("Ingrese un numero"))
+    N2 = int(input("Ingrese un numero"))
+    resultado = int(input(N1 + N2))    
 
-if N1 + N2:
-     print("el resultado es  "+ resultado)
+    if N1 + N2:
+        print("el resultado es  "+ resultado)
      
 #Ejercicio 2    
 #Leer 4 números enteros, calcular la suma e informar el resultado.
-n1 = int(input("Ingrese un valor"))
-n2 = int(input("Ingrese un valor"))
-n3 = int(input("Ingrese un valor"))
-n4 = int(input("Ingrese un valor"))
-result = int(input(n1 + n2 + n3 + n4))
+    n1 = int(input("Ingrese un valor"))
+    n2 = int(input("Ingrese un valor"))
+    n3 = int(input("Ingrese un valor"))
+    n4 = int(input("Ingrese un valor"))
+    result = int(input(n1 + n2 + n3 + n4))
 
-if n1 + n2 + n3 + n4:
-    print("El resultado es   "+ result)
+    if n1 + n2 + n3 + n4:
+        print("El resultado es   "+ result)
     
 #Ejercicio 3
 #Dados 2 números enteros, que representan los lados de un rectángulo se pide informar la superficie del mismo.
@@ -104,5 +105,7 @@ def ejercicio6():
 
     print("La superficie es:  ", superficie)
 
-    ejercicio6()
+
+
+#
 
