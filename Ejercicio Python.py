@@ -79,4 +79,17 @@ multiplicacion()
 #Se ingresa 3 números que representan horas, minutos y segundos. Se pide informar el resultado expresado en 
 #segundos. Determinar qué tipo de valor es el aconsejable para los datos solicitados
 
+def calcular_segundos(horas, minutos, segundos):
+    total_segundos = horas * 3600 + minutos * 60 + segundos
+    return total_segundos
 
+# Definir los valores de tiempo
+horas = 12
+minutos = 55
+segundos = 6
+
+# Calcular los segundos totales
+segundos_totales = calcular_segundos(horas, minutos, segundos)
+
+# Mostrar el resultado
+print("El resultado expresado en segundos es:", segundos_totales)
