@@ -107,5 +107,49 @@ def ejercicio6():
 
 
 
-#
+#Ejercicio7
+#Dados 6 números reales, informar el promedio de los mismos.
+
+def ejercicio7():
+   N1 = float(input("el valor es: "))
+   N2 = float(input("el valor es: "))
+   N3 = float(input("el valor es: "))
+   N4 = float(input("el valor es: ")) 
+   N5 = float(input("el valor es: "))
+   N6 = float(input("el valor es: "))
+
+   resultado = (N1 + N2 + N3 + N4 + N5 + N6)/6
+   print("el promedio es:  ", resultado)
+
+#Ejercicio8
+#Dados 2 números enteros, que representan una cantidad parcial y total se pide: Calcular e informar 
+#el porcentaje que representa la primera de la segunda. ¿Qué tipo de datos son los recomendados para este algoritmo?
+
+def ejercicio8():
+    n1 = int(input("Ingrese un valor numerico"))
+    n2 = int(input("Ingrese un valor numerico"))
+    resultado = (n1 * n2)/100
+
+    print("El promedio es:  ", resultado)
+
+#Ejercicio9
+#Dada una fecha que se lee en formato numérico DDMMAAAA (dos números para el día, dos para el mes, cuatropara el año),
+#se solicita obtener el día el mes y año por separado en tres variables. (usar descomposición matemática)
+
+def ejercicio9():
+    # Leemos la fecha en formato numérico DDMMAAAA
+    fecha_numerica = int(input("Ingrese la fecha en formato numérico DDMMAAAA: "))
+
+    # Descomponemos la fecha en día, mes y año
+    anio = fecha_numerica % 10000  # Obtenemos los últimos cuatro dígitos para el año
+    mes_dia = fecha_numerica // 10000  # Obtenemos los primeros seis dígitos para el mes y día
+    mes = mes_dia // 100  # Obtenemos los dos primeros dígitos para el mes
+    dia = mes_dia % 100  # Obtenemos los dos últimos dígitos para el día
+
+    # Mostramos los resultados
+    print("Día:", dia)
+    print("Mes:", mes)
+    print("Año:", anio)
+
+#ejercicio10
 
