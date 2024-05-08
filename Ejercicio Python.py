@@ -1,12 +1,12 @@
 #Crear una lista llamada meses y que alamacena el nombre de los doce meses del año.
 #Mostrar por pantalla los doce nombres utilizando la función print().
 
+def ejercicio():
+    meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 
-meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 
-
-for mes in meses:
-    print(mes)
+    for mes in meses:
+        print(mes)
     
     
 #A partir del siguiente array que se proporciona: var valores = [true, 5, false, "hola", "adios",2];
@@ -15,25 +15,24 @@ for mes in meses:
 #necesarios para obtener un resultado true y otro resultado false
 #Determinar el resultado de las cinco operaciones matemáticas realizadas con los dos
 #elementos numéricos
+def ejercicio2():
+    valor = [True, 5, False, "hola", "adios", 2]
 
-valor = [True, 5, False, "hola", "adios", 2]
-
-if len(valor[3]) < len(valor[4]):
-    print("adios es mas grande que hola")
-    print(valor[0])
+    if len(valor[3]) < len(valor[4]):
+        print("adios es mas grande que hola")
+        print(valor[0])
     
-else:
-    print("hola es más chico que adios")
-    print(valor[2])
+    else:
+        print("hola es más chico que adios")
+        print(valor[2])
  
-print(valor[1]+valor[5])
-print(valor[1]-valor[5])
-print(valor[1]*valor[5])
-print(valor[1]/valor[5])
+    print(valor[1]+valor[5])
+    print(valor[1]-valor[5])
+    print(valor[1]*valor[5])
+    print(valor[1]/valor[5])
 
 #Ejercicio 1
 #Leer 2 números enteros, calcular la suma e informar el resultado.
-
 N1 = int(input("Ingrese un numero"))
 N2 = int(input("Ingrese un numero"))
 resultado = int(input(N1 + N2))    
@@ -62,18 +61,16 @@ def multiplicacion ():
     
     print("La altura es   ", Solucion)
     
-multiplicacion()
 
 #Ejercicio 4
 #Dado 1 número con decimales, que representa el lado de un cuadrado se pide informar la superficie del mismo.
 
 def multiplicacion():
-    triangulo = float(input("Ingrese un valor decimal"))
-    dato = triangulo * 4
+    Cuadrado = float(input("Ingrese un valor decimal"))
+    dato = Cuadrado * 4
     
     print("El area del triangulo es:  ", dato)
-    
-multiplicacion()
+
 
 #Ejercicio 5
 #Se ingresa 3 números que representan horas, minutos y segundos. Se pide informar el resultado expresado en 
@@ -84,12 +81,28 @@ def calcular_segundos(horas, minutos, segundos):
     return total_segundos
 
 # Definir los valores de tiempo
-horas = 12
-minutos = 55
-segundos = 6
+def ejercicio5():
+    horas = int(input("Ingrese un valor"))
+    minutos = int(input("Ingrese un valor"))
+    segundos = int(input("Ingrese un valor"))
 
 # Calcular los segundos totales
-segundos_totales = calcular_segundos(horas, minutos, segundos)
+    segundos_totales = calcular_segundos(horas, minutos, segundos)
 
 # Mostrar el resultado
-print("El resultado expresado en segundos es:", segundos_totales)
+    print("El resultado expresado en segundos es:", segundos_totales)
+
+#Ejercicio 6
+#Se necesita calcular la superficie de un triángulo, y se dispone solamente de los valores de su base y altura.
+#Definir también que tipo de valor es aconsejable para las variables con la información que se tiene.
+#**No se podrá usar valores fijos en las fórmulas del algoritmo. Solo variables y/o constantes.**
+
+def ejercicio6():
+    base = int(input("Ingrese el valor de la base")) 
+    altura = int(input("Ingrese el valor de la altura"))
+    superficie = (base * altura)
+
+    print("La superficie es:  ", superficie)
+
+    ejercicio6()
+
