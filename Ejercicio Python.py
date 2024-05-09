@@ -157,3 +157,28 @@ def ejercicio9():
 #30% del valor total de la nota final. B) la calificación por los trabajos prácticos corresponde al 20% del valor de la
 #nota final. C) el examen integrador que corresponde al 50% restante. (los valores de las notas pueden ir de 0 a 10)
 
+def ejercicio10():
+    calif1 = float(input("Parcial")[0:11])
+    calif2 = float(input("nota de tps")[0:11])
+    calif3 = float(input("nota de examen")[0:11])
+
+    nota1 = (calif1 / 100) * 30
+    nota2 = (calif2 / 100) * 20
+    nota3 = (calif3 / 100) * 50
+    notatotal = (nota1 + nota2 + nota3)
+
+    print("Tu nota final sera de:  ", notatotal)
+
+
+#Ejercicio11
+#Una concesionaria de autos paga a su personal, un salario de 5500 pesos por mes, mas una comisión del 200
+#pesos por cada auto vendido y un adicional del 5% del valor del auto vendido. Diseñar un algoritmo para calcular
+#el salario total del vendedor. Conociendo solamente el número de autos vendidos y el valor de venta de la unidad.
+def ejercicio11():
+    autos = int(input("Ingrese la cantidad vendida"))
+    valor = float(input("Ingrese el porcentaje del valor del coche"))
+    sueldo = (autos + valor * 5500)
+
+    print("El sueldo total es de:  ", sueldo)
+
+ejercicio11()
