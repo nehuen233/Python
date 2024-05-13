@@ -128,9 +128,10 @@ def ejercicio7():
 def ejercicio8():
     n1 = int(input("Ingrese un valor numerico"))
     n2 = int(input("Ingrese un valor numerico"))
-    resultado = (n1 * n2)/100
+    resultado = (n1 / n2)*100
 
     print("El promedio es:  ", resultado)
+
 
 #Ejercicio9
 #Dada una fecha que se lee en formato numérico DDMMAAAA (dos números para el día, dos para el mes, cuatropara el año),
@@ -158,9 +159,9 @@ def ejercicio9():
 #nota final. C) el examen integrador que corresponde al 50% restante. (los valores de las notas pueden ir de 0 a 10)
 
 def ejercicio10():
-    calif1 = float(input("Parcial")[0:11])
-    calif2 = float(input("nota de tps")[0:11])
-    calif3 = float(input("nota de examen")[0:11])
+    calif1 = float(input("Parcial"))
+    calif2 = float(input("nota de tps"))
+    calif3 = float(input("nota de examen"))
 
     nota1 = (calif1 / 100) * 30
     nota2 = (calif2 / 100) * 20
