@@ -157,3 +157,5 @@ def ejercicio9():
 #30% del valor total de la nota final. B) la calificación por los trabajos prácticos corresponde al 20% del valor de la
 #nota final. C) el examen integrador que corresponde al 50% restante. (los valores de las notas pueden ir de 0 a 10)
 
+def ejercicio10()
+    
